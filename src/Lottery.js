@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import './Lottery.css'
+
 import Balls from './Ball'
 
 export class Lottery extends Component {
@@ -29,7 +31,7 @@ export class Lottery extends Component {
   }
   render() {
     return (
-      <div>
+      <div className='Lottery'>
         <h1>{this.props.title}</h1>
         <div className='d-flex justify-content-center'>
           {this.state.num.map(i => <Balls num={i} />)}

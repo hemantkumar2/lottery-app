@@ -10,6 +10,7 @@ export default class App extends Component {
       <div className='App'>
         <h1>Hemant</h1>
         <Lottery />
+        <Lottery title='Mini Daily' maxNum={10} maxBalls={4} />
       </div>
     )
   }
